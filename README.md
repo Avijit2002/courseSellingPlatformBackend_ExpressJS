@@ -1,6 +1,6 @@
 ## Course Selling Platform Backend
 
-### Learnings:
+## Learnings:
 1) Learned how to create relationship between 2 collections in MongoDB.
 2) Learned about $push and $in operators of MongoDB.
 3) Implemented JWT authentication.
