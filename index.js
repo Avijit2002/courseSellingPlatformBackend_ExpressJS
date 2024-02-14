@@ -11,6 +11,12 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use("/admin", adminRouter)
 app.use("/user", userRouter)
 
+app.use((err,req,res,next)=>{
+    res.send({
+        message: err.message
+    })
+})
+
 const PORT = 4000;
 
 app.listen(PORT, () => {

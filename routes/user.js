@@ -2,9 +2,10 @@ const { Router } = require("express");
 const router = Router();
 const userMiddleware = require("../middleware/user");
 const { User, Course } = require("../db/index")
+const {asyncFunction} = require("../utils/asyncHandler")
 
 // User Routes
-router.post('/signup',async (req, res) => {
+router.post('/signup',asyncFunction(async (req, res) => {
     // Implement user signup logic
     const username = req.body.username
   const password = req.body.password
@@ -25,7 +26,7 @@ router.post('/signup',async (req, res) => {
     .catch(err => {
       res.send('Try again later')
     })
-});
+}));
 
 router.post('/signin',async (req,res)=>{
   const {username,password} = req.body;
