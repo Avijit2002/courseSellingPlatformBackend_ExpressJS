@@ -1,11 +1,10 @@
-## Create a course selling website
+## Course Selling Platform Backend
 
-### Description
-
-Same as the last assignment but you need to use jwts for authentication.
-We have introduced the signgin endpoints for both users and admins.
-For this one, in every authenticated requests, you need to send the jwt in headers (Authorization : "Bearer <actual token>").
-You need to use mongodb to store all the data persistently.
+## Learnings:
+1) Learned how to create relationship between 2 collections in MongoDB.
+2) Learned about $push and $in operators of MongoDB.
+3) Implemented JWT authentication.
+4) Implemented protected routes using middlewares.
 
 ## Routes
 
